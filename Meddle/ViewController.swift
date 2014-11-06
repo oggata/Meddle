@@ -53,13 +53,29 @@ class ViewController: UIViewController {
     }
     
     func tableView(tableView: UITableView?, cellForRowAtIndexPath indexPath:NSIndexPath!) -> UITableViewCell! {
-        let cell: UITableViewCell = UITableViewCell(style: UITableViewCellStyle.Subtitle, reuseIdentifier: "Cell")
-        cell.textLabel?.text = "xxxx"
+        //let cell: UITableViewCell = UITableViewCell(style: UITableViewCellStyle.Subtitle, reuseIdentifier: "Cell")
+        //cell.textLabel?.text = "xxxx"
         //cell.textLabel?.text = self.damsData[indexPath.row]["name"] as String?
+        
+        let cell: CommentsViewCell = self.tableView.dequeueReusableCellWithIdentifier("comment_cell_identifier") as CommentsViewCell     
+        //var _comment:String = CommentArray[indexPath.row]["comment"]!
+        //cell.setComment(_comment)                
         return cell
     }
     
     func tableView(tableView: UITableView?, didSelectRowAtIndexPath indexPath:NSIndexPath!) {
+    }
+}
+
+
+class CommentsViewCell: UITableViewCell {
+        
+    override func awakeFromNib() {
+        super.awakeFromNib()
+    }
+    
+    func setComment(comment:String){
+
     }
 }
 

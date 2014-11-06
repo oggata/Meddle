@@ -22,6 +22,7 @@
 		F3C548271A0B5C490007BB42 /* topLog.png in Resources */ = {isa = PBXBuildFile; fileRef = F3C548251A0B5C490007BB42 /* topLog.png */; };
 		F3C5482F1A0B66C40007BB42 /* Chat.png in Resources */ = {isa = PBXBuildFile; fileRef = F3C5482E1A0B66C40007BB42 /* Chat.png */; };
 		F3C548311A0B66CD0007BB42 /* Gear.png in Resources */ = {isa = PBXBuildFile; fileRef = F3C548301A0B66CD0007BB42 /* Gear.png */; };
+		F3C548331A0B68950007BB42 /* user_icon_default.fw.png in Resources */ = {isa = PBXBuildFile; fileRef = F3C548321A0B68950007BB42 /* user_icon_default.fw.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,7 @@
 		F3C548251A0B5C490007BB42 /* topLog.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = topLog.png; sourceTree = "<group>"; };
 		F3C5482E1A0B66C40007BB42 /* Chat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Chat.png; sourceTree = "<group>"; };
 		F3C548301A0B66CD0007BB42 /* Gear.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Gear.png; sourceTree = "<group>"; };
+		F3C548321A0B68950007BB42 /* user_icon_default.fw.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = user_icon_default.fw.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -213,6 +215,7 @@
 		F3C548291A0B620C0007BB42 /* Icon */ = {
 			isa = PBXGroup;
 			children = (
+				F3C548321A0B68950007BB42 /* user_icon_default.fw.png */,
 				F3C548301A0B66CD0007BB42 /* Gear.png */,
 				F3C5482E1A0B66C40007BB42 /* Chat.png */,
 			);
@@ -300,6 +303,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F3C548271A0B5C490007BB42 /* topLog.png in Resources */,
+				F3C548331A0B68950007BB42 /* user_icon_default.fw.png in Resources */,
 				F3C547F41A0B525C0007BB42 /* Main.storyboard in Resources */,
 				F3C547F91A0B525C0007BB42 /* LaunchScreen.xib in Resources */,
 				F3C5482F1A0B66C40007BB42 /* Chat.png in Resources */,
