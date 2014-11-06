@@ -18,6 +18,10 @@
 		F3C548131A0B52E00007BB42 /* Tab4ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C548121A0B52E00007BB42 /* Tab4ViewController.swift */; };
 		F3C548151A0B53060007BB42 /* FilterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C548141A0B53060007BB42 /* FilterViewController.swift */; };
 		F3C548171A0B53200007BB42 /* WriteCommentController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C548161A0B53200007BB42 /* WriteCommentController.swift */; };
+		F3C548261A0B5C490007BB42 /* headerLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = F3C548241A0B5C490007BB42 /* headerLogo.png */; };
+		F3C548271A0B5C490007BB42 /* topLog.png in Resources */ = {isa = PBXBuildFile; fileRef = F3C548251A0B5C490007BB42 /* topLog.png */; };
+		F3C5482B1A0B62190007BB42 /* Gear.png in Resources */ = {isa = PBXBuildFile; fileRef = F3C5482A1A0B62190007BB42 /* Gear.png */; };
+		F3C5482D1A0B62600007BB42 /* Chat.png in Resources */ = {isa = PBXBuildFile; fileRef = F3C5482C1A0B62600007BB42 /* Chat.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +50,10 @@
 		F3C548121A0B52E00007BB42 /* Tab4ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tab4ViewController.swift; sourceTree = "<group>"; };
 		F3C548141A0B53060007BB42 /* FilterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterViewController.swift; sourceTree = "<group>"; };
 		F3C548161A0B53200007BB42 /* WriteCommentController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WriteCommentController.swift; sourceTree = "<group>"; };
+		F3C548241A0B5C490007BB42 /* headerLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = headerLogo.png; sourceTree = "<group>"; };
+		F3C548251A0B5C490007BB42 /* topLog.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = topLog.png; sourceTree = "<group>"; };
+		F3C5482A1A0B62190007BB42 /* Gear.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Gear.png; sourceTree = "<group>"; };
+		F3C5482C1A0B62600007BB42 /* Chat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Chat.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -163,6 +171,7 @@
 		F3C5481C1A0B536D0007BB42 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				F3C548281A0B5C540007BB42 /* Images */,
 				F3C5481E1A0B53790007BB42 /* TableViewCells */,
 				F3C5481D1A0B53710007BB42 /* Storyboards */,
 			);
@@ -189,6 +198,25 @@
 			children = (
 			);
 			name = Business;
+			sourceTree = "<group>";
+		};
+		F3C548281A0B5C540007BB42 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				F3C548291A0B620C0007BB42 /* Icon */,
+				F3C548241A0B5C490007BB42 /* headerLogo.png */,
+				F3C548251A0B5C490007BB42 /* topLog.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		F3C548291A0B620C0007BB42 /* Icon */ = {
+			isa = PBXGroup;
+			children = (
+				F3C5482C1A0B62600007BB42 /* Chat.png */,
+				F3C5482A1A0B62190007BB42 /* Gear.png */,
+			);
+			name = Icon;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -271,9 +299,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F3C5482D1A0B62600007BB42 /* Chat.png in Resources */,
+				F3C5482B1A0B62190007BB42 /* Gear.png in Resources */,
+				F3C548271A0B5C490007BB42 /* topLog.png in Resources */,
 				F3C547F41A0B525C0007BB42 /* Main.storyboard in Resources */,
 				F3C547F91A0B525C0007BB42 /* LaunchScreen.xib in Resources */,
 				F3C547F61A0B525C0007BB42 /* Images.xcassets in Resources */,
+				F3C548261A0B5C490007BB42 /* headerLogo.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

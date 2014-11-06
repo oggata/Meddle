@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>5DF9D40A-8EF6-477E-B54E-0027B7812914</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Meddle</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>A5AC4E9B4161A7903FD538EE06AC3B27F6B9C44E</key>
+		<string>github.com:oggata/Meddle.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Meddle.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>A5AC4E9B4161A7903FD538EE06AC3B27F6B9C44E</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>github.com:oggata/Meddle.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>A5AC4E9B4161A7903FD538EE06AC3B27F6B9C44E</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>A5AC4E9B4161A7903FD538EE06AC3B27F6B9C44E</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Meddle</string>
+		</dict>
+	</array>
+</dict>
+</plist>

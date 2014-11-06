@@ -15,7 +15,30 @@
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="H2U-wm-QV3">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="0.0" y="84" width="400" height="453"/>
+                                </variation>
+                                <connections>
+                                    <outlet property="dataSource" destination="vXZ-lx-hvc" id="Rx8-6G-4Vb"/>
+                                    <outlet property="delegate" destination="vXZ-lx-hvc" id="6Wd-WC-WNs"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="H2U-wm-QV3"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="H2U-wm-QV3"/>
+                            </mask>
+                        </variation>
                     </view>
                     <navigationItem key="navigationItem" id="0Yk-1Q-DOv">
                         <barButtonItem key="leftBarButtonItem" style="plain" id="fLA-Kc-NIT">
@@ -43,10 +66,13 @@
                             </button>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="tableView" destination="H2U-wm-QV3" id="ILF-zt-cCi"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1384" y="110"/>
+            <point key="canvasLocation" x="1383" y="110"/>
         </scene>
         <!--Filter View Controller-->
         <scene sceneID="Fm6-9g-dTQ">
@@ -88,17 +114,52 @@
                                     <action selector="backButtonPushed:" destination="SXX-VL-ZSZ" eventType="touchUpInside" id="qlF-Yt-cIs"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JJl-n7-VaX">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="Writte">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="336" y="27" width="41" height="30"/>
+                                </variation>
+                                <connections>
+                                    <action selector="writeButtonPushed:" destination="SXX-VL-ZSZ" eventType="touchUpInside" id="PnZ-Y0-Yep"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WBu-CJ-RpM">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="25" y="80" width="346" height="128"/>
+                                </variation>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="JJl-n7-VaX"/>
+                                <exclude reference="WBu-CJ-RpM"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="JJl-n7-VaX"/>
+                                <include reference="WBu-CJ-RpM"/>
+                            </mask>
+                        </variation>
                     </view>
                     <navigationItem key="navigationItem" id="qtB-Rg-tgf"/>
                     <connections>
                         <outlet property="backButton" destination="sm0-0E-Y3g" id="9Ta-il-zMF"/>
+                        <outlet property="inputComment" destination="WBu-CJ-RpM" id="0jb-LL-0i2"/>
+                        <outlet property="writeButton" destination="JJl-n7-VaX" id="fBG-qJ-GGM"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="k7G-6L-Fqo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2116" y="483"/>
+            <point key="canvasLocation" x="2115" y="483"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="zuU-1I-2r8">
@@ -176,7 +237,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="myQ-fv-uNq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="935" y="1042"/>
+            <point key="canvasLocation" x="906" y="1035"/>
         </scene>
         <!--Item-->
         <scene sceneID="Y8M-l5-kAA">
