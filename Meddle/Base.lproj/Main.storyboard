@@ -67,7 +67,9 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="filterButton" destination="Otk-5Y-ujd" id="iJA-gU-ldX"/>
                         <outlet property="tableView" destination="H2U-wm-QV3" id="ILF-zt-cCi"/>
+                        <outlet property="writeButton" destination="nhz-qh-2p7" id="67y-FH-wf6"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>

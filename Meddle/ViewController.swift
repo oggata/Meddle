@@ -10,6 +10,12 @@ import UIKit
 
 class ViewController: UIViewController {
 
+
+    @IBOutlet var filterButton: UIButton!
+    @IBOutlet var writeButton: UIButton!
+    
+    
+    
     @IBOutlet var tableView: UITableView!
     
     override func viewDidLoad() {
@@ -24,7 +30,16 @@ class ViewController: UIViewController {
         self.navigationController?.navigationBar.tintColor = UIColor.whiteColor()
         //self.navigationController?.navigationBar.backgroundColor = UIColor.blueColor()
         self.navigationController?.navigationBar.barTintColor = UIColor(red: 29.0/255.0, green: 202.0/255.0, blue: 255.0/255.0, alpha: 1)
-
+        
+        
+        //self.filterButton.imageView.contentMode = UIViewContentModeScaleAspectFit
+        self.filterButton.setTitle("", forState: .Normal)
+        self.filterButton.setImage(UIImage(named: "Gear.png"), forState: UIControlState.Normal)
+        self.filterButton.sizeToFit()
+        
+        self.writeButton.setTitle("", forState: .Normal)
+        self.writeButton.setImage(UIImage(named: "Chat.png"), forState: UIControlState.Normal)
+        self.writeButton.sizeToFit()
     }
 
     override func didReceiveMemoryWarning() {
