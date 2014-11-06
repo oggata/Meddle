@@ -32,7 +32,10 @@ class ViewController: UIViewController {
         self.navigationController?.navigationBar.barTintColor = UIColor(red: 29.0/255.0, green: 202.0/255.0, blue: 255.0/255.0, alpha: 1)
         
         
-        //self.filterButton.imageView.contentMode = UIViewContentModeScaleAspectFit
+        setIconImage()
+
+        
+
         self.filterButton.setTitle("", forState: .Normal)
         self.filterButton.setImage(UIImage(named: "Gear.png"), forState: UIControlState.Normal)
         self.filterButton.sizeToFit()
@@ -40,6 +43,28 @@ class ViewController: UIViewController {
         self.writeButton.setTitle("", forState: .Normal)
         self.writeButton.setImage(UIImage(named: "Chat.png"), forState: UIControlState.Normal)
         self.writeButton.sizeToFit()
+    }
+    
+    func setIconImage(){
+    
+        self.tabBarController?.tabBar.barTintColor = UIColor.blackColor()
+        
+        var tabbarItem = self.tabBarController?.tabBar.items![0] as UITabBarItem;
+        tabbarItem.image = UIImage(named: "Brightness.png")
+        //tabbarItem.title = nil
+        
+        tabbarItem = self.tabBarController?.tabBar.items![1] as UITabBarItem;
+        tabbarItem.image = UIImage(named: "Closed-Mail.png")
+        //tabbarItem.title = nil
+        
+        tabbarItem = self.tabBarController?.tabBar.items![2] as UITabBarItem;
+        tabbarItem.image = UIImage(named: "Add-to-Cloud.png")
+        //tabbarItem.title = nil
+        
+        tabbarItem = self.tabBarController?.tabBar.items![3] as UITabBarItem;
+        tabbarItem.image = UIImage(named: "Radio-Tower.png")
+        //tabbarItem.title = nil
+        
     }
 
     override func didReceiveMemoryWarning() {

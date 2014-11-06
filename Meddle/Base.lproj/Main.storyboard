@@ -292,6 +292,7 @@
         <!--Item-->
         <scene sceneID="pN4-OO-ia8">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qMp-T7-OP8" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="cMZ-UL-71C" customClass="Tab2ViewController" customModule="Meddle" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Czt-iJ-Aio"/>
@@ -304,7 +305,6 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" id="Guw-b1-Ydv"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="qMp-T7-OP8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-369" y="1035"/>
         </scene>

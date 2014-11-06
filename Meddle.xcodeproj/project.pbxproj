@@ -23,6 +23,10 @@
 		F3C5482F1A0B66C40007BB42 /* Chat.png in Resources */ = {isa = PBXBuildFile; fileRef = F3C5482E1A0B66C40007BB42 /* Chat.png */; };
 		F3C548311A0B66CD0007BB42 /* Gear.png in Resources */ = {isa = PBXBuildFile; fileRef = F3C548301A0B66CD0007BB42 /* Gear.png */; };
 		F3C548331A0B68950007BB42 /* user_icon_default.fw.png in Resources */ = {isa = PBXBuildFile; fileRef = F3C548321A0B68950007BB42 /* user_icon_default.fw.png */; };
+		F3C548351A0B78EE0007BB42 /* Brightness.png in Resources */ = {isa = PBXBuildFile; fileRef = F3C548341A0B78EE0007BB42 /* Brightness.png */; };
+		F3C548371A0B79030007BB42 /* Add-to-Cloud.png in Resources */ = {isa = PBXBuildFile; fileRef = F3C548361A0B79030007BB42 /* Add-to-Cloud.png */; };
+		F3C548391A0B790F0007BB42 /* Closed-Mail.png in Resources */ = {isa = PBXBuildFile; fileRef = F3C548381A0B790F0007BB42 /* Closed-Mail.png */; };
+		F3C5483B1A0B79220007BB42 /* Radio-Tower.png in Resources */ = {isa = PBXBuildFile; fileRef = F3C5483A1A0B79220007BB42 /* Radio-Tower.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +60,10 @@
 		F3C5482E1A0B66C40007BB42 /* Chat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Chat.png; sourceTree = "<group>"; };
 		F3C548301A0B66CD0007BB42 /* Gear.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Gear.png; sourceTree = "<group>"; };
 		F3C548321A0B68950007BB42 /* user_icon_default.fw.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = user_icon_default.fw.png; sourceTree = "<group>"; };
+		F3C548341A0B78EE0007BB42 /* Brightness.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Brightness.png; sourceTree = "<group>"; };
+		F3C548361A0B79030007BB42 /* Add-to-Cloud.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Add-to-Cloud.png"; sourceTree = "<group>"; };
+		F3C548381A0B790F0007BB42 /* Closed-Mail.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Closed-Mail.png"; sourceTree = "<group>"; };
+		F3C5483A1A0B79220007BB42 /* Radio-Tower.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Radio-Tower.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -215,6 +223,10 @@
 		F3C548291A0B620C0007BB42 /* Icon */ = {
 			isa = PBXGroup;
 			children = (
+				F3C5483A1A0B79220007BB42 /* Radio-Tower.png */,
+				F3C548381A0B790F0007BB42 /* Closed-Mail.png */,
+				F3C548361A0B79030007BB42 /* Add-to-Cloud.png */,
+				F3C548341A0B78EE0007BB42 /* Brightness.png */,
 				F3C548321A0B68950007BB42 /* user_icon_default.fw.png */,
 				F3C548301A0B66CD0007BB42 /* Gear.png */,
 				F3C5482E1A0B66C40007BB42 /* Chat.png */,
@@ -305,8 +317,12 @@
 				F3C548271A0B5C490007BB42 /* topLog.png in Resources */,
 				F3C548331A0B68950007BB42 /* user_icon_default.fw.png in Resources */,
 				F3C547F41A0B525C0007BB42 /* Main.storyboard in Resources */,
+				F3C5483B1A0B79220007BB42 /* Radio-Tower.png in Resources */,
 				F3C547F91A0B525C0007BB42 /* LaunchScreen.xib in Resources */,
+				F3C548351A0B78EE0007BB42 /* Brightness.png in Resources */,
+				F3C548391A0B790F0007BB42 /* Closed-Mail.png in Resources */,
 				F3C5482F1A0B66C40007BB42 /* Chat.png in Resources */,
+				F3C548371A0B79030007BB42 /* Add-to-Cloud.png in Resources */,
 				F3C547F61A0B525C0007BB42 /* Images.xcassets in Resources */,
 				F3C548311A0B66CD0007BB42 /* Gear.png in Resources */,
 				F3C548261A0B5C490007BB42 /* headerLogo.png in Resources */,
