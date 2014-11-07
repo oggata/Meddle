@@ -8,18 +8,21 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController,CommentViewControllerDelegate,UIViewControllerTransitioningDelegate {
 
 
     @IBOutlet var filterButton: UIButton!
     @IBOutlet var writeButton: UIButton!
     
+    var feedData:NSArray = NSArray()
     
     
     @IBOutlet var tableView: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        loadData()
         // Do any additional setup after loading the view, typically from a nib.
         //var image = UIImage(named: "headerLogo.png") as UIImage
         //self.navigationController.navigationBar.setBackgroundImage(image, 
@@ -32,10 +35,13 @@ class ViewController: UIViewController {
         self.navigationController?.navigationBar.barTintColor = UIColor(red: 29.0/255.0, green: 202.0/255.0, blue: 255.0/255.0, alpha: 1)
         
         
+        setHeaderIconImage()
         setIconImage()
 
-        
-
+    }
+    
+    
+    func setHeaderIconImage(){
         self.filterButton.setTitle("", forState: .Normal)
         self.filterButton.setImage(UIImage(named: "Gear.png"), forState: UIControlState.Normal)
         self.filterButton.sizeToFit()
@@ -73,8 +79,14 @@ class ViewController: UIViewController {
     }
 
     
+    func reloadCommentTable(writeCommentController:WriteCommentController){
+println("reload Data")
+        self.loadData()
+    }
+    
     func tableView(tableView: UITableView!, numberOfRowsInSection section: Int) -> Int  {
-        return 10
+        //return 10
+        return self.feedData.count as Int
     }
     
     func tableView(tableView: UITableView?, cellForRowAtIndexPath indexPath:NSIndexPath!) -> UITableViewCell! {
@@ -83,24 +95,66 @@ class ViewController: UIViewController {
         //cell.textLabel?.text = self.damsData[indexPath.row]["name"] as String?
         
         let cell: CommentsViewCell = self.tableView.dequeueReusableCellWithIdentifier("comment_cell_identifier") as CommentsViewCell     
-        //var _comment:String = CommentArray[indexPath.row]["comment"]!
-        //cell.setComment(_comment)                
+        
+        var _comment:String = self.feedData[indexPath.row]["comment"] as String!
+        cell.setComment(_comment)                
         return cell
     }
     
     func tableView(tableView: UITableView?, didSelectRowAtIndexPath indexPath:NSIndexPath!) {
     }
+    
+    
+    // Parseからデータの取得
+    func loadData(){
+        var query:PFQuery = PFQuery(className: "Feeds")
+        //query.whereKey("DamId",equalTo:self.damId)
+        query.limit = 999
+        //query.orderByAscending("createdAt")
+        query.orderByDescending("createdAt")
+        query.findObjectsInBackgroundWithBlock{
+            (objects:[AnyObject]!, error:NSError!)->Void in
+            if error != nil{
+                print(error)
+            }else{
+                self.feedData = objects
+                //self.tableView.rowHeight = UITableViewAutomaticDimension
+                self.tableView?.reloadData()
+            }
+        }
+    }
+    
 }
 
 
 class CommentsViewCell: UITableViewCell {
         
+    @IBOutlet var timeLable: UILabel!
+    @IBOutlet var nameLabel: UILabel!
+    @IBOutlet var commentLable: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
     }
     
+    override func sizeThatFits(size: CGSize) -> CGSize {
+        var sizeThatFits = self.commentLable!.sizeThatFits(size)
+        var width = CGFloat(640)
+        if(sizeThatFits.height * 1.7 < 100){
+            sizeThatFits.height  = 100 / 1.7
+        }
+        return CGSizeMake(width, sizeThatFits.height * 1.7);
+    }  
+    
     func setComment(comment:String){
-
+        commentLable.text = comment
+        // 行数無制限
+        commentLable.numberOfLines = 0;
+        // サイズを自動調整
+        commentLable.sizeToFit()
+        // 文字を詰めて改行する
+        commentLable.lineBreakMode = NSLineBreakMode.ByCharWrapping
+        self.layoutIfNeeded() 
     }
 }
 

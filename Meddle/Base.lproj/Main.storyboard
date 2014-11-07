@@ -7,7 +7,7 @@
         <!--View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="Meddle" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="STIDViewController" id="vXZ-lx-hvc" customClass="ViewController" customModule="Meddle" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
@@ -41,15 +41,6 @@
                                                         <rect key="frame" x="87" y="11" width="50" height="21"/>
                                                     </variation>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="min" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u5C-Qv-9eI">
-                                                    <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                    <color key="textColor" red="0.54453974184782616" green="0.54453974184782616" blue="0.54453974184782616" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <nil key="highlightedColor"/>
-                                                    <variation key="widthClass=compact" fixedFrame="YES">
-                                                        <rect key="frame" x="350" y="8" width="50" height="21"/>
-                                                    </variation>
-                                                </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="text......." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="01X-pB-r6s">
                                                     <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
@@ -59,24 +50,38 @@
                                                         <rect key="frame" x="87" y="35" width="298" height="22"/>
                                                     </variation>
                                                 </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="min" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u5C-Qv-9eI">
+                                                    <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <color key="textColor" red="0.54453974184782616" green="0.54453974184782616" blue="0.54453974184782616" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <variation key="widthClass=compact" fixedFrame="YES">
+                                                        <rect key="frame" x="350" y="8" width="50" height="21"/>
+                                                    </variation>
+                                                </label>
                                             </subviews>
                                             <variation key="default">
                                                 <mask key="subviews">
                                                     <exclude reference="GIw-D8-lUN"/>
                                                     <exclude reference="3HH-0Q-A0s"/>
-                                                    <exclude reference="u5C-Qv-9eI"/>
                                                     <exclude reference="01X-pB-r6s"/>
+                                                    <exclude reference="u5C-Qv-9eI"/>
                                                 </mask>
                                             </variation>
                                             <variation key="widthClass=compact">
                                                 <mask key="subviews">
                                                     <include reference="GIw-D8-lUN"/>
                                                     <include reference="3HH-0Q-A0s"/>
-                                                    <include reference="u5C-Qv-9eI"/>
                                                     <include reference="01X-pB-r6s"/>
+                                                    <include reference="u5C-Qv-9eI"/>
                                                 </mask>
                                             </variation>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="commentLable" destination="01X-pB-r6s" id="R7B-Iu-kDn"/>
+                                            <outlet property="nameLabel" destination="3HH-0Q-A0s" id="Nto-gl-wuA"/>
+                                            <outlet property="timeLable" destination="u5C-Qv-9eI" id="mjc-h9-AWu"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <variation key="widthClass=compact" fixedFrame="YES">
@@ -206,7 +211,7 @@
         <!--Write Comment Controller-->
         <scene sceneID="F81-BN-Hdm">
             <objects>
-                <viewController id="SXX-VL-ZSZ" customClass="WriteCommentController" customModule="Meddle" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="STIDWriteCommentController" id="SXX-VL-ZSZ" customClass="WriteCommentController" customModule="Meddle" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Tzp-gF-dbG"/>
                         <viewControllerLayoutGuide type="bottom" id="zqu-sc-5QG"/>

@@ -14,6 +14,7 @@ class Tab2ViewController: UIViewController {
     @IBOutlet var collectionView: UICollectionView!
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.title = "MyIdentities"
     }
 
     func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
@@ -21,14 +22,15 @@ class Tab2ViewController: UIViewController {
     }
     
     func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 5
+        return 20
     }    
 
-    func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
-        var cell = collectionView.dequeueReusableCellWithReuseIdentifier("cell_identity", forIndexPath: indexPath) as UICollectionViewCell
+    func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> CoViewCell {
+        var cell = collectionView.dequeueReusableCellWithReuseIdentifier("cell_identity", forIndexPath: indexPath) as CoViewCell
         cell.backgroundColor = UIColor.blackColor()
-        //cell.textLabel?.text = "\(indexPath.section):\(indexPath.row)"
-        //cell.imageView?.image = UIImage(named: "Gear.png")
+        //cell.textLabel?.text = "\(indexPath.section):\(indexPath.row)"        
+        var fileName = "mantou_" + NSString(format:"%03d",indexPath.row + 1) + ".png"
+        cell.imageView?.image = UIImage(named:fileName)
         return cell
     }
     
