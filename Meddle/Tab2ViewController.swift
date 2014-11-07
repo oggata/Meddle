@@ -27,7 +27,7 @@ class Tab2ViewController: UIViewController {
 
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> CoViewCell {
         var cell = collectionView.dequeueReusableCellWithReuseIdentifier("cell_identity", forIndexPath: indexPath) as CoViewCell
-        cell.backgroundColor = UIColor.blackColor()
+        //cell.backgroundColor = UIColor.blackColor()
         //cell.textLabel?.text = "\(indexPath.section):\(indexPath.row)"        
         var fileName = "mantou_" + NSString(format:"%03d",indexPath.row + 1) + ".png"
         cell.imageView?.image = UIImage(named:fileName)
@@ -59,6 +59,27 @@ class CoViewCell: UICollectionViewCell {
         super.awakeFromNib()
         
         self.imageView?.image = UIImage(named: "mantou_001.png")
+        
+        let randInt = arc4random_uniform(10);
+        if(randInt == 1) {
+            self.backgroundColor = UIColor.redColor()
+        }else if(randInt == 2){            
+            self.backgroundColor = UIColor.blueColor()
+        }else if(randInt == 3){
+            self.backgroundColor = UIColor.brownColor()
+        }else if(randInt == 4){
+            self.backgroundColor = UIColor.cyanColor()
+        }else if(randInt == 5){
+            self.backgroundColor = UIColor.greenColor()
+        }else if(randInt == 6){
+            self.backgroundColor = UIColor.orangeColor()
+        }else if(randInt == 7){
+            self.backgroundColor = UIColor.purpleColor()
+        }else if(randInt == 8){
+            self.backgroundColor = UIColor.grayColor()
+        }else{
+            self.backgroundColor = UIColor.yellowColor()
+        }
     }
     
     /*

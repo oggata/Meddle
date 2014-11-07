@@ -8,21 +8,23 @@
 
 import UIKit
 
-class ViewController: UIViewController,CommentViewControllerDelegate,UIViewControllerTransitioningDelegate {
-
+class ViewController: UIViewController {
 
     @IBOutlet var filterButton: UIButton!
     @IBOutlet var writeButton: UIButton!
-    
-    var feedData:NSArray = NSArray()
-    
-    
+    @IBAction func writeButtonPushed(sender: AnyObject) {
+    } 
     @IBOutlet var tableView: UITableView!
+    var feedData:NSArray = NSArray()
+
+    override func viewDidAppear(animated: Bool) {
+        self.loadData()
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        loadData()
+        //loadData()
         // Do any additional setup after loading the view, typically from a nib.
         //var image = UIImage(named: "headerLogo.png") as UIImage
         //self.navigationController.navigationBar.setBackgroundImage(image, 
@@ -37,7 +39,6 @@ class ViewController: UIViewController,CommentViewControllerDelegate,UIViewContr
         
         setHeaderIconImage()
         setIconImage()
-
     }
     
     
@@ -78,12 +79,6 @@ class ViewController: UIViewController,CommentViewControllerDelegate,UIViewContr
         // Dispose of any resources that can be recreated.
     }
 
-    
-    func reloadCommentTable(writeCommentController:WriteCommentController){
-println("reload Data")
-        self.loadData()
-    }
-    
     func tableView(tableView: UITableView!, numberOfRowsInSection section: Int) -> Int  {
         //return 10
         return self.feedData.count as Int
@@ -97,7 +92,11 @@ println("reload Data")
         let cell: CommentsViewCell = self.tableView.dequeueReusableCellWithIdentifier("comment_cell_identifier") as CommentsViewCell     
         
         var _comment:String = self.feedData[indexPath.row]["comment"] as String!
-        cell.setComment(_comment)                
+        cell.setComment(_comment)
+        
+        
+        
+        
         return cell
     }
     
@@ -135,13 +134,39 @@ class CommentsViewCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
+        
+        //let colorView = UIView()
+        self.backgroundColor = UIColor.yellowColor()
+        
+        
+        let randInt = arc4random_uniform(10);
+        if(randInt == 1) {
+            self.backgroundColor = UIColor.redColor()
+        }else if(randInt == 2){            
+            self.backgroundColor = UIColor.blueColor()
+        }else if(randInt == 3){
+            self.backgroundColor = UIColor.brownColor()
+        }else if(randInt == 4){
+            self.backgroundColor = UIColor.cyanColor()
+        }else if(randInt == 5){
+            self.backgroundColor = UIColor.greenColor()
+        }else if(randInt == 6){
+            self.backgroundColor = UIColor.orangeColor()
+        }else if(randInt == 7){
+            self.backgroundColor = UIColor.purpleColor()
+        }else if(randInt == 8){
+            self.backgroundColor = UIColor.grayColor()
+        }else{
+            self.backgroundColor = UIColor.yellowColor()
+        }
+        
     }
     
     override func sizeThatFits(size: CGSize) -> CGSize {
         var sizeThatFits = self.commentLable!.sizeThatFits(size)
         var width = CGFloat(640)
-        if(sizeThatFits.height * 1.7 < 100){
-            sizeThatFits.height  = 100 / 1.7
+        if(sizeThatFits.height * 1.7 < 400){
+            sizeThatFits.height  = 400 / 1.7
         }
         return CGSizeMake(width, sizeThatFits.height * 1.7);
     }  
@@ -153,7 +178,7 @@ class CommentsViewCell: UITableViewCell {
         // サイズを自動調整
         commentLable.sizeToFit()
         // 文字を詰めて改行する
-        commentLable.lineBreakMode = NSLineBreakMode.ByCharWrapping
+        //commentLable.lineBreakMode = NSLineBreakMode.ByCharWrapping
         self.layoutIfNeeded() 
     }
 }

@@ -8,13 +8,7 @@
 
 import UIKit
 
-protocol CommentViewControllerDelegate{
-    func reloadCommentTable(writeCommentController:WriteCommentController)
-}
-
 class WriteCommentController: UIViewController {
-    
-    var delegate:CommentViewControllerDelegate? = nil
     
     @IBOutlet var backButton: UIButton!
     @IBAction func backButtonPushed(sender: AnyObject) {        
@@ -41,11 +35,6 @@ class WriteCommentController: UIViewController {
         inputComment.layer.borderWidth = 1
         inputComment.layer.borderColor = UIColor.blackColor().CGColor
         inputComment.layer.cornerRadius = 8
-        
-        
-        
-        var vController : ViewController = self.storyboard?.instantiateViewControllerWithIdentifier("STIDViewController") as ViewController
-        self.delegate = vController
 
     }
     
@@ -67,14 +56,10 @@ class WriteCommentController: UIViewController {
         feeds.saveInBackgroundWithBlock {
             (success: Bool!,error: NSError!) -> Void in
             if success==true {
-                //print("parse edildi score id = \(score.objectId) ")
                 println("success")
-                self.delegate?.reloadCommentTable(self)
-                //self.delegate?.reloadCommentListTable(self)
             }else{
                 print(error)
             }
         }
     }
-    
 }
