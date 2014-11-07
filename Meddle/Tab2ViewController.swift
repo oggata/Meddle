@@ -56,7 +56,7 @@ class CoViewCell: UICollectionViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         
-        self.imageView?.image = UIImage(named: "Gear.png")
+        self.imageView?.image = UIImage(named: "mantou_001.png")
     }
     
     /*

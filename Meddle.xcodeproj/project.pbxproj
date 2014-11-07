@@ -27,6 +27,41 @@
 		F3C548371A0B79030007BB42 /* Add-to-Cloud.png in Resources */ = {isa = PBXBuildFile; fileRef = F3C548361A0B79030007BB42 /* Add-to-Cloud.png */; };
 		F3C548391A0B790F0007BB42 /* Closed-Mail.png in Resources */ = {isa = PBXBuildFile; fileRef = F3C548381A0B790F0007BB42 /* Closed-Mail.png */; };
 		F3C5483B1A0B79220007BB42 /* Radio-Tower.png in Resources */ = {isa = PBXBuildFile; fileRef = F3C5483A1A0B79220007BB42 /* Radio-Tower.png */; };
+		F3E525DB1A0C8A6E0017D865 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3E525D71A0C8A6E0017D865 /* Bolts.framework */; };
+		F3E525DC1A0C8A6E0017D865 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3E525D81A0C8A6E0017D865 /* Parse.framework */; };
+		F3E525DD1A0C8A6E0017D865 /* ParseFacebookUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3E525D91A0C8A6E0017D865 /* ParseFacebookUtils.framework */; };
+		F3E525DE1A0C8A6E0017D865 /* ParseUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3E525DA1A0C8A6E0017D865 /* ParseUI.framework */; };
+		F3E525E01A0C8AA00017D865 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3E525DF1A0C8AA00017D865 /* AudioToolbox.framework */; };
+		F3E525E21A0C8AAD0017D865 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3E525E11A0C8AAD0017D865 /* CFNetwork.framework */; };
+		F3E525E41A0C8AB30017D865 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3E525E31A0C8AB30017D865 /* CoreGraphics.framework */; };
+		F3E525E61A0C8AB90017D865 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3E525E51A0C8AB90017D865 /* CoreLocation.framework */; };
+		F3E525E81A0C8AC80017D865 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F3E525E71A0C8AC80017D865 /* libz.dylib */; };
+		F3E525EA1A0C8AD30017D865 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3E525E91A0C8AD30017D865 /* MobileCoreServices.framework */; };
+		F3E525EC1A0C8ADC0017D865 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3E525EB1A0C8ADC0017D865 /* QuartzCore.framework */; };
+		F3E525EE1A0C8AE30017D865 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3E525ED1A0C8AE30017D865 /* Security.framework */; };
+		F3E525F01A0C8AEA0017D865 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3E525EF1A0C8AEA0017D865 /* StoreKit.framework */; };
+		F3E525F21A0C8AF00017D865 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3E525F11A0C8AF00017D865 /* SystemConfiguration.framework */; };
+		F3E525F51A0C8B660017D865 /* sample.m in Sources */ = {isa = PBXBuildFile; fileRef = F3E525F41A0C8B660017D865 /* sample.m */; };
+		F3E5260B1A0C8F1B0017D865 /* mantou_001.png in Resources */ = {isa = PBXBuildFile; fileRef = F3E525F71A0C8F1B0017D865 /* mantou_001.png */; };
+		F3E5260C1A0C8F1B0017D865 /* mantou_002.png in Resources */ = {isa = PBXBuildFile; fileRef = F3E525F81A0C8F1B0017D865 /* mantou_002.png */; };
+		F3E5260D1A0C8F1B0017D865 /* mantou_003.png in Resources */ = {isa = PBXBuildFile; fileRef = F3E525F91A0C8F1B0017D865 /* mantou_003.png */; };
+		F3E5260E1A0C8F1B0017D865 /* mantou_004.png in Resources */ = {isa = PBXBuildFile; fileRef = F3E525FA1A0C8F1B0017D865 /* mantou_004.png */; };
+		F3E5260F1A0C8F1B0017D865 /* mantou_005.png in Resources */ = {isa = PBXBuildFile; fileRef = F3E525FB1A0C8F1B0017D865 /* mantou_005.png */; };
+		F3E526101A0C8F1B0017D865 /* mantou_006.png in Resources */ = {isa = PBXBuildFile; fileRef = F3E525FC1A0C8F1B0017D865 /* mantou_006.png */; };
+		F3E526111A0C8F1B0017D865 /* mantou_007.png in Resources */ = {isa = PBXBuildFile; fileRef = F3E525FD1A0C8F1B0017D865 /* mantou_007.png */; };
+		F3E526121A0C8F1B0017D865 /* mantou_008.png in Resources */ = {isa = PBXBuildFile; fileRef = F3E525FE1A0C8F1B0017D865 /* mantou_008.png */; };
+		F3E526131A0C8F1B0017D865 /* mantou_009.png in Resources */ = {isa = PBXBuildFile; fileRef = F3E525FF1A0C8F1B0017D865 /* mantou_009.png */; };
+		F3E526141A0C8F1B0017D865 /* mantou_010.png in Resources */ = {isa = PBXBuildFile; fileRef = F3E526001A0C8F1B0017D865 /* mantou_010.png */; };
+		F3E526151A0C8F1B0017D865 /* mantou_011.png in Resources */ = {isa = PBXBuildFile; fileRef = F3E526011A0C8F1B0017D865 /* mantou_011.png */; };
+		F3E526161A0C8F1B0017D865 /* mantou_012.png in Resources */ = {isa = PBXBuildFile; fileRef = F3E526021A0C8F1B0017D865 /* mantou_012.png */; };
+		F3E526171A0C8F1B0017D865 /* mantou_013.png in Resources */ = {isa = PBXBuildFile; fileRef = F3E526031A0C8F1B0017D865 /* mantou_013.png */; };
+		F3E526181A0C8F1B0017D865 /* mantou_014.png in Resources */ = {isa = PBXBuildFile; fileRef = F3E526041A0C8F1B0017D865 /* mantou_014.png */; };
+		F3E526191A0C8F1B0017D865 /* mantou_015.png in Resources */ = {isa = PBXBuildFile; fileRef = F3E526051A0C8F1B0017D865 /* mantou_015.png */; };
+		F3E5261A1A0C8F1B0017D865 /* mantou_016.png in Resources */ = {isa = PBXBuildFile; fileRef = F3E526061A0C8F1B0017D865 /* mantou_016.png */; };
+		F3E5261B1A0C8F1B0017D865 /* mantou_017.png in Resources */ = {isa = PBXBuildFile; fileRef = F3E526071A0C8F1B0017D865 /* mantou_017.png */; };
+		F3E5261C1A0C8F1B0017D865 /* mantou_018.png in Resources */ = {isa = PBXBuildFile; fileRef = F3E526081A0C8F1B0017D865 /* mantou_018.png */; };
+		F3E5261D1A0C8F1B0017D865 /* mantou_019.png in Resources */ = {isa = PBXBuildFile; fileRef = F3E526091A0C8F1B0017D865 /* mantou_019.png */; };
+		F3E5261E1A0C8F1B0017D865 /* mantou_020.png in Resources */ = {isa = PBXBuildFile; fileRef = F3E5260A1A0C8F1B0017D865 /* mantou_020.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +99,42 @@
 		F3C548361A0B79030007BB42 /* Add-to-Cloud.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Add-to-Cloud.png"; sourceTree = "<group>"; };
 		F3C548381A0B790F0007BB42 /* Closed-Mail.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Closed-Mail.png"; sourceTree = "<group>"; };
 		F3C5483A1A0B79220007BB42 /* Radio-Tower.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Radio-Tower.png"; sourceTree = "<group>"; };
+		F3E525D71A0C8A6E0017D865 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
+		F3E525D81A0C8A6E0017D865 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		F3E525D91A0C8A6E0017D865 /* ParseFacebookUtils.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseFacebookUtils.framework; sourceTree = "<group>"; };
+		F3E525DA1A0C8A6E0017D865 /* ParseUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseUI.framework; sourceTree = "<group>"; };
+		F3E525DF1A0C8AA00017D865 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		F3E525E11A0C8AAD0017D865 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		F3E525E31A0C8AB30017D865 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		F3E525E51A0C8AB90017D865 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		F3E525E71A0C8AC80017D865 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		F3E525E91A0C8AD30017D865 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		F3E525EB1A0C8ADC0017D865 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		F3E525ED1A0C8AE30017D865 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		F3E525EF1A0C8AEA0017D865 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		F3E525F11A0C8AF00017D865 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		F3E525F31A0C8B660017D865 /* Meddle-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Meddle-Bridging-Header.h"; sourceTree = "<group>"; };
+		F3E525F41A0C8B660017D865 /* sample.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = sample.m; sourceTree = "<group>"; };
+		F3E525F71A0C8F1B0017D865 /* mantou_001.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mantou_001.png; sourceTree = "<group>"; };
+		F3E525F81A0C8F1B0017D865 /* mantou_002.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mantou_002.png; sourceTree = "<group>"; };
+		F3E525F91A0C8F1B0017D865 /* mantou_003.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mantou_003.png; sourceTree = "<group>"; };
+		F3E525FA1A0C8F1B0017D865 /* mantou_004.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mantou_004.png; sourceTree = "<group>"; };
+		F3E525FB1A0C8F1B0017D865 /* mantou_005.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mantou_005.png; sourceTree = "<group>"; };
+		F3E525FC1A0C8F1B0017D865 /* mantou_006.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mantou_006.png; sourceTree = "<group>"; };
+		F3E525FD1A0C8F1B0017D865 /* mantou_007.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mantou_007.png; sourceTree = "<group>"; };
+		F3E525FE1A0C8F1B0017D865 /* mantou_008.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mantou_008.png; sourceTree = "<group>"; };
+		F3E525FF1A0C8F1B0017D865 /* mantou_009.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mantou_009.png; sourceTree = "<group>"; };
+		F3E526001A0C8F1B0017D865 /* mantou_010.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mantou_010.png; sourceTree = "<group>"; };
+		F3E526011A0C8F1B0017D865 /* mantou_011.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mantou_011.png; sourceTree = "<group>"; };
+		F3E526021A0C8F1B0017D865 /* mantou_012.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mantou_012.png; sourceTree = "<group>"; };
+		F3E526031A0C8F1B0017D865 /* mantou_013.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mantou_013.png; sourceTree = "<group>"; };
+		F3E526041A0C8F1B0017D865 /* mantou_014.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mantou_014.png; sourceTree = "<group>"; };
+		F3E526051A0C8F1B0017D865 /* mantou_015.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mantou_015.png; sourceTree = "<group>"; };
+		F3E526061A0C8F1B0017D865 /* mantou_016.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mantou_016.png; sourceTree = "<group>"; };
+		F3E526071A0C8F1B0017D865 /* mantou_017.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mantou_017.png; sourceTree = "<group>"; };
+		F3E526081A0C8F1B0017D865 /* mantou_018.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mantou_018.png; sourceTree = "<group>"; };
+		F3E526091A0C8F1B0017D865 /* mantou_019.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mantou_019.png; sourceTree = "<group>"; };
+		F3E5260A1A0C8F1B0017D865 /* mantou_020.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mantou_020.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +142,20 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F3E525E41A0C8AB30017D865 /* CoreGraphics.framework in Frameworks */,
+				F3E525F21A0C8AF00017D865 /* SystemConfiguration.framework in Frameworks */,
+				F3E525F01A0C8AEA0017D865 /* StoreKit.framework in Frameworks */,
+				F3E525EE1A0C8AE30017D865 /* Security.framework in Frameworks */,
+				F3E525EC1A0C8ADC0017D865 /* QuartzCore.framework in Frameworks */,
+				F3E525EA1A0C8AD30017D865 /* MobileCoreServices.framework in Frameworks */,
+				F3E525E81A0C8AC80017D865 /* libz.dylib in Frameworks */,
+				F3E525E61A0C8AB90017D865 /* CoreLocation.framework in Frameworks */,
+				F3E525E21A0C8AAD0017D865 /* CFNetwork.framework in Frameworks */,
+				F3E525E01A0C8AA00017D865 /* AudioToolbox.framework in Frameworks */,
+				F3E525DC1A0C8A6E0017D865 /* Parse.framework in Frameworks */,
+				F3E525DB1A0C8A6E0017D865 /* Bolts.framework in Frameworks */,
+				F3E525DE1A0C8A6E0017D865 /* ParseUI.framework in Frameworks */,
+				F3E525DD1A0C8A6E0017D865 /* ParseFacebookUtils.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -87,9 +172,11 @@
 		F3C547E01A0B525C0007BB42 = {
 			isa = PBXGroup;
 			children = (
+				F3E525F41A0C8B660017D865 /* sample.m */,
 				F3C547EB1A0B525C0007BB42 /* Meddle */,
 				F3C548011A0B525D0007BB42 /* MeddleTests */,
 				F3C547EA1A0B525C0007BB42 /* Products */,
+				F3E525F31A0C8B660017D865 /* Meddle-Bridging-Header.h */,
 			);
 			sourceTree = "<group>";
 		};
@@ -105,6 +192,7 @@
 		F3C547EB1A0B525C0007BB42 /* Meddle */ = {
 			isa = PBXGroup;
 			children = (
+				F3E525D61A0C8A610017D865 /* Frameworks */,
 				F3C5481C1A0B536D0007BB42 /* UI */,
 				F3C5481B1A0B53670007BB42 /* Constants */,
 				F3C5481A1A0B53610007BB42 /* Models */,
@@ -213,6 +301,7 @@
 		F3C548281A0B5C540007BB42 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				F3E525F61A0C8F0B0017D865 /* face */,
 				F3C548291A0B620C0007BB42 /* Icon */,
 				F3C548241A0B5C490007BB42 /* headerLogo.png */,
 				F3C548251A0B5C490007BB42 /* topLog.png */,
@@ -232,6 +321,54 @@
 				F3C5482E1A0B66C40007BB42 /* Chat.png */,
 			);
 			name = Icon;
+			sourceTree = "<group>";
+		};
+		F3E525D61A0C8A610017D865 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F3E525F11A0C8AF00017D865 /* SystemConfiguration.framework */,
+				F3E525EF1A0C8AEA0017D865 /* StoreKit.framework */,
+				F3E525ED1A0C8AE30017D865 /* Security.framework */,
+				F3E525EB1A0C8ADC0017D865 /* QuartzCore.framework */,
+				F3E525E91A0C8AD30017D865 /* MobileCoreServices.framework */,
+				F3E525E71A0C8AC80017D865 /* libz.dylib */,
+				F3E525E51A0C8AB90017D865 /* CoreLocation.framework */,
+				F3E525E31A0C8AB30017D865 /* CoreGraphics.framework */,
+				F3E525E11A0C8AAD0017D865 /* CFNetwork.framework */,
+				F3E525DF1A0C8AA00017D865 /* AudioToolbox.framework */,
+				F3E525D71A0C8A6E0017D865 /* Bolts.framework */,
+				F3E525D81A0C8A6E0017D865 /* Parse.framework */,
+				F3E525D91A0C8A6E0017D865 /* ParseFacebookUtils.framework */,
+				F3E525DA1A0C8A6E0017D865 /* ParseUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F3E525F61A0C8F0B0017D865 /* face */ = {
+			isa = PBXGroup;
+			children = (
+				F3E525F71A0C8F1B0017D865 /* mantou_001.png */,
+				F3E525F81A0C8F1B0017D865 /* mantou_002.png */,
+				F3E525F91A0C8F1B0017D865 /* mantou_003.png */,
+				F3E525FA1A0C8F1B0017D865 /* mantou_004.png */,
+				F3E525FB1A0C8F1B0017D865 /* mantou_005.png */,
+				F3E525FC1A0C8F1B0017D865 /* mantou_006.png */,
+				F3E525FD1A0C8F1B0017D865 /* mantou_007.png */,
+				F3E525FE1A0C8F1B0017D865 /* mantou_008.png */,
+				F3E525FF1A0C8F1B0017D865 /* mantou_009.png */,
+				F3E526001A0C8F1B0017D865 /* mantou_010.png */,
+				F3E526011A0C8F1B0017D865 /* mantou_011.png */,
+				F3E526021A0C8F1B0017D865 /* mantou_012.png */,
+				F3E526031A0C8F1B0017D865 /* mantou_013.png */,
+				F3E526041A0C8F1B0017D865 /* mantou_014.png */,
+				F3E526051A0C8F1B0017D865 /* mantou_015.png */,
+				F3E526061A0C8F1B0017D865 /* mantou_016.png */,
+				F3E526071A0C8F1B0017D865 /* mantou_017.png */,
+				F3E526081A0C8F1B0017D865 /* mantou_018.png */,
+				F3E526091A0C8F1B0017D865 /* mantou_019.png */,
+				F3E5260A1A0C8F1B0017D865 /* mantou_020.png */,
+			);
+			name = face;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -315,15 +452,35 @@
 			buildActionMask = 2147483647;
 			files = (
 				F3C548271A0B5C490007BB42 /* topLog.png in Resources */,
+				F3E526191A0C8F1B0017D865 /* mantou_015.png in Resources */,
 				F3C548331A0B68950007BB42 /* user_icon_default.fw.png in Resources */,
+				F3E526171A0C8F1B0017D865 /* mantou_013.png in Resources */,
+				F3E526101A0C8F1B0017D865 /* mantou_006.png in Resources */,
+				F3E5260D1A0C8F1B0017D865 /* mantou_003.png in Resources */,
+				F3E5261E1A0C8F1B0017D865 /* mantou_020.png in Resources */,
 				F3C547F41A0B525C0007BB42 /* Main.storyboard in Resources */,
+				F3E5261C1A0C8F1B0017D865 /* mantou_018.png in Resources */,
+				F3E5261D1A0C8F1B0017D865 /* mantou_019.png in Resources */,
+				F3E5261A1A0C8F1B0017D865 /* mantou_016.png in Resources */,
 				F3C5483B1A0B79220007BB42 /* Radio-Tower.png in Resources */,
 				F3C547F91A0B525C0007BB42 /* LaunchScreen.xib in Resources */,
+				F3E526161A0C8F1B0017D865 /* mantou_012.png in Resources */,
+				F3E5261B1A0C8F1B0017D865 /* mantou_017.png in Resources */,
 				F3C548351A0B78EE0007BB42 /* Brightness.png in Resources */,
+				F3E526131A0C8F1B0017D865 /* mantou_009.png in Resources */,
+				F3E526141A0C8F1B0017D865 /* mantou_010.png in Resources */,
+				F3E5260F1A0C8F1B0017D865 /* mantou_005.png in Resources */,
 				F3C548391A0B790F0007BB42 /* Closed-Mail.png in Resources */,
+				F3E5260E1A0C8F1B0017D865 /* mantou_004.png in Resources */,
+				F3E526111A0C8F1B0017D865 /* mantou_007.png in Resources */,
+				F3E526121A0C8F1B0017D865 /* mantou_008.png in Resources */,
+				F3E526151A0C8F1B0017D865 /* mantou_011.png in Resources */,
 				F3C5482F1A0B66C40007BB42 /* Chat.png in Resources */,
+				F3E5260C1A0C8F1B0017D865 /* mantou_002.png in Resources */,
 				F3C548371A0B79030007BB42 /* Add-to-Cloud.png in Resources */,
 				F3C547F61A0B525C0007BB42 /* Images.xcassets in Resources */,
+				F3E5260B1A0C8F1B0017D865 /* mantou_001.png in Resources */,
+				F3E526181A0C8F1B0017D865 /* mantou_014.png in Resources */,
 				F3C548311A0B66CD0007BB42 /* Gear.png in Resources */,
 				F3C548261A0B5C490007BB42 /* headerLogo.png in Resources */,
 			);
@@ -348,6 +505,7 @@
 				F3C548111A0B52C30007BB42 /* Tab3ViewController.swift in Sources */,
 				F3C547F11A0B525C0007BB42 /* ViewController.swift in Sources */,
 				F3C548131A0B52E00007BB42 /* Tab4ViewController.swift in Sources */,
+				F3E525F51A0C8B660017D865 /* sample.m in Sources */,
 				F3C547EF1A0B525C0007BB42 /* AppDelegate.swift in Sources */,
 				F3C5480F1A0B52960007BB42 /* Tab2ViewController.swift in Sources */,
 			);
@@ -472,9 +630,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Meddle",
+				);
 				INFOPLIST_FILE = Meddle/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Meddle-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -482,9 +647,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Meddle",
+				);
 				INFOPLIST_FILE = Meddle/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Meddle-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -541,6 +712,7 @@
 				F3C5480A1A0B525D0007BB42 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F3C5480B1A0B525D0007BB42 /* Build configuration list for PBXNativeTarget "MeddleTests" */ = {
 			isa = XCConfigurationList;
@@ -549,6 +721,7 @@
 				F3C5480D1A0B525D0007BB42 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
