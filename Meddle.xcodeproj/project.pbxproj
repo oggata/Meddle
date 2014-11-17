@@ -62,6 +62,7 @@
 		F3E5261C1A0C8F1B0017D865 /* mantou_018.png in Resources */ = {isa = PBXBuildFile; fileRef = F3E526081A0C8F1B0017D865 /* mantou_018.png */; };
 		F3E5261D1A0C8F1B0017D865 /* mantou_019.png in Resources */ = {isa = PBXBuildFile; fileRef = F3E526091A0C8F1B0017D865 /* mantou_019.png */; };
 		F3E5261E1A0C8F1B0017D865 /* mantou_020.png in Resources */ = {isa = PBXBuildFile; fileRef = F3E5260A1A0C8F1B0017D865 /* mantou_020.png */; };
+		F3E526201A0CBB990017D865 /* 120Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = F3E5261F1A0CBB990017D865 /* 120Icon.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -135,6 +136,7 @@
 		F3E526081A0C8F1B0017D865 /* mantou_018.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mantou_018.png; sourceTree = "<group>"; };
 		F3E526091A0C8F1B0017D865 /* mantou_019.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mantou_019.png; sourceTree = "<group>"; };
 		F3E5260A1A0C8F1B0017D865 /* mantou_020.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mantou_020.png; sourceTree = "<group>"; };
+		F3E5261F1A0CBB990017D865 /* 120Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 120Icon.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -312,6 +314,7 @@
 		F3C548291A0B620C0007BB42 /* Icon */ = {
 			isa = PBXGroup;
 			children = (
+				F3E5261F1A0CBB990017D865 /* 120Icon.png */,
 				F3C5483A1A0B79220007BB42 /* Radio-Tower.png */,
 				F3C548381A0B790F0007BB42 /* Closed-Mail.png */,
 				F3C548361A0B79030007BB42 /* Add-to-Cloud.png */,
@@ -456,6 +459,7 @@
 				F3C548331A0B68950007BB42 /* user_icon_default.fw.png in Resources */,
 				F3E526171A0C8F1B0017D865 /* mantou_013.png in Resources */,
 				F3E526101A0C8F1B0017D865 /* mantou_006.png in Resources */,
+				F3E526201A0CBB990017D865 /* 120Icon.png in Resources */,
 				F3E5260D1A0C8F1B0017D865 /* mantou_003.png in Resources */,
 				F3E5261E1A0C8F1B0017D865 /* mantou_020.png in Resources */,
 				F3C547F41A0B525C0007BB42 /* Main.storyboard in Resources */,
@@ -638,6 +642,7 @@
 				INFOPLIST_FILE = Meddle/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "d32e2aa5-5e3f-4f5a-a858-b0dd24e21dab";
 				SWIFT_OBJC_BRIDGING_HEADER = "Meddle-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -655,6 +660,7 @@
 				INFOPLIST_FILE = Meddle/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "d32e2aa5-5e3f-4f5a-a858-b0dd24e21dab";
 				SWIFT_OBJC_BRIDGING_HEADER = "Meddle-Bridging-Header.h";
 			};
 			name = Release;
